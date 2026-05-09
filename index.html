@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Seguridad y Acompañamiento | Seguridad de Élite</title>
+    <meta name="description" content="Servicios exclusivos de seguridad privada y acompañamiento de élite en Colombia. Confidencialidad, autoridad y protección de activos críticos.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-shield-halved text-gold"></i>
+                    JS <span>SEGURIDAD</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#cobertura">Cobertura</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#contacto" class="btn btn-gold hide-mobile">Contacto de Élite</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav-overlay">
+        <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+        <a href="#servicios" onclick="toggleMenu()">Servicios</a>
+        <a href="#cobertura" onclick="toggleMenu()">Cobertura</a>
+        <a href="#nosotros" onclick="toggleMenu()">Nosotros</a>
+        <a href="#contacto" onclick="toggleMenu()" class="btn btn-gold">Contacto</a>
+    </div>
+
+    <main>
+        <!-- Cinematic Hero -->
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h4 class="text-gold reveal-up" data-reveal>Estándar de Oro en Protección</h4>
+                    <h1 class="reveal-up delay-100" data-reveal>SEGURIDAD SIN CONCESIONES</h1>
+                    <p class="text-muted reveal-up delay-200" data-reveal style="font-size: clamp(1rem, 2vw, 1.2rem); max-width: 650px;">Protección estratégica y acompañamiento exclusivo para activos críticos, infraestructura y personal de alta dirección en toda Colombia.</p>
+                    <div class="hero-btns reveal-up delay-300" data-reveal style="display: flex; gap: 1.5rem; margin-top: 3rem;">
+                        <a href="#servicios" class="btn btn-gold">Explorar Servicios</a>
+                        <a href="#nosotros" class="btn btn-outline">Nuestra Filosofía</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="section">
+            <div class="container">
+                <div style="margin-bottom: 4rem;" class="reveal-up" data-reveal>
+                    <h4 class="text-gold">Nuestra Experticia</h4>
+                    <h2>Servicios Corporativos</h2>
+                    <p class="text-muted" style="max-width: 600px;">Soluciones personalizadas diseñadas para mitigar riesgos complejos en entornos dinámicos.</p>
+                </div>
+                
+                <div class="grid-base services-grid">
+                    <div class="service-card reveal-up delay-100" data-reveal>
+                        <i class="fas fa-tower-observation"></i>
+                        <h3>Vigilancia Estratégica</h3>
+                        <p class="text-muted">Despliegue de personal táctico entrenado en protocolos de alta seguridad y control de entornos críticos.</p>
+                    </div>
+                    <div class="service-card reveal-up delay-200" data-reveal>
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Acompañamiento VIP</h3>
+                        <p class="text-muted">Servicios discretos de protección personal y escolta logística para dignatarios y ejecutivos de alto perfil.</p>
+                    </div>
+                    <div class="service-card reveal-up delay-300" data-reveal>
+                        <i class="fas fa-industry"></i>
+                        <h3>Protección de Activos</h3>
+                        <p class="text-muted">Especialistas en el resguardo de maquinaria pesada y activos de alto valor en proyectos de infraestructura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="section" style="background: var(--bg-navy);">
+            <div class="container">
+                <div class="grid-base features-grid">
+                    <div class="feature-item reveal-in delay-100" data-reveal>
+                        <i class="fas fa-medal"></i>
+                        <h3>Autoridad</h3>
+                        <p class="text-muted">Más de 20 años de trayectoria institucional y enlace directo con la Fuerza Pública.</p>
+                    </div>
+                    <div class="feature-item reveal-in delay-200" data-reveal>
+                        <i class="fas fa-fingerprint"></i>
+                        <h3>Exclusividad</h3>
+                        <p class="text-muted">Protocolos personalizados de acuerdo a la naturaleza de cada operación y cliente.</p>
+                    </div>
+                    <div class="feature-item reveal-in delay-300" data-reveal>
+                        <i class="fas fa-globe"></i>
+                        <h3>Presencia</h3>
+                        <p class="text-muted">Cobertura nacional garantizada con respuesta operativa en las principales ciudades del país.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- National Coverage / About -->
+        <section id="nosotros" class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="reveal-up" data-reveal>
+                        <h4 class="text-gold">Presencia Institucional</h4>
+                        <h2>Despliegue Nacional</h2>
+                        <p class="text-muted" style="margin-bottom: 2.5rem;">Nuestra red de seguridad se extiende por los puntos más estratégicos de Colombia, garantizando una respuesta inmediata y efectiva.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <p style="margin: 0;"><i class="fas fa-location-dot text-gold"></i> Cali (Sede)</p>
+                            <p style="margin: 0;"><i class="fas fa-location-dot text-gold"></i> Bogotá</p>
+                            <p style="margin: 0;"><i class="fas fa-location-dot text-gold"></i> Medellín</p>
+                            <p style="margin: 0;"><i class="fas fa-location-dot text-gold"></i> Popayán</p>
+                            <p style="margin: 0;"><i class="fas fa-location-dot text-gold"></i> Buenaventura</p>
+                            <p style="margin: 0;"><i class="fas fa-location-dot text-gold"></i> Armenia</p>
+                        </div>
+                    </div>
+                    <div class="reveal-in delay-200" data-reveal style="background: var(--glass); border: 1px solid var(--border-gold); padding: var(--card-padding);">
+                        <h3 class="text-gold">Compromiso Legal</h3>
+                        <p class="text-muted">Cumplimos con los más altos estándares operativos exigidos por la Superintendencia de Vigilancia y Seguridad Privada. NIT 901139122-7.</p>
+                        <a href="#contacto" class="btn btn-outline" style="margin-top: 1rem;">Ver Certificaciones</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section" style="background: var(--bg-navy);">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 4rem;" class="reveal-up" data-reveal>
+                    <h2 class="text-gold">Confianza Corporativa</h2>
+                </div>
+                <div class="testimonial-wrapper reveal-up delay-100" data-reveal>
+                    <div class="testimonial-card">
+                        <p>"La precisión operativa y el profesionalismo del equipo de JS Seguridad han sido fundamentales para la integridad de nuestros proyectos de infraestructura a nivel nacional. Un servicio de élite en cada detalle."</p>
+                        <div style="margin-top: 2rem;">
+                            <p class="text-gold" style="font-weight: 600; margin-bottom: 0;">Director de Seguridad Regional</p>
+                            <p class="text-muted" style="font-size: 0.8rem; text-transform: uppercase;">Multinacional de Energía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="reveal-up" data-reveal>
+                        <h4 class="text-gold">Contáctenos</h4>
+                        <h2>Inicie una Consulta</h2>
+                        <p class="text-muted">Solicite un análisis de riesgos personalizado. Nuestro equipo se pondrá en contacto de manera confidencial.</p>
+                        <div style="margin-top: 3rem;">
+                            <p class="text-gold" style="font-size: 0.8rem; letter-spacing: 2px;">LÍNEA DIRECTA</p>
+                            <h3 style="margin-bottom: 0;">+57 311 747 2199</h3>
+                            <p class="text-muted">jerryservicios@gmail.com</p>
+                        </div>
+                    </div>
+                    <form class="reveal-up delay-200" data-reveal>
+                        <div class="input-group">
+                            <input type="text" placeholder="NOMBRE COMPLETO" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="CORREO CORPORATIVO" required>
+                        </div>
+                        <div class="input-group">
+                            <select required>
+                                <option value="" disabled selected>NATURALEZA DEL REQUERIMIENTO</option>
+                                <option value="vip">Acompañamiento VIP</option>
+                                <option value="corp">Vigilancia Corporativa</option>
+                                <option value="ind">Protección de Activos</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <textarea rows="4" placeholder="DETALLES DEL PROYECTO"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold" style="width: 100%;">Enviar Requerimiento</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo" style="margin-bottom: 1.5rem;">
+                        <i class="fas fa-shield-halved text-gold"></i>
+                        JS <span>SEGURIDAD</span>
+                    </div>
+                    <p class="text-muted" style="max-width: 300px;">Liderazgo y exclusividad en servicios de seguridad privada en Colombia desde 2005.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 style="margin-bottom: 1.5rem; font-size: 0.8rem;">NAVEGACIÓN</h4>
+                    <ul style="list-style: none; display: grid; gap: 0.75rem;">
+                        <li><a href="#inicio" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Inicio</a></li>
+                        <li><a href="#servicios" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Servicios</a></li>
+                        <li><a href="#nosotros" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Nosotros</a></li>
+                        <li><a href="#contacto" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 style="margin-bottom: 1.5rem; font-size: 0.8rem;">SERVICIOS</h4>
+                    <ul style="list-style: none; display: grid; gap: 0.75rem;">
+                        <li><a href="#" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Vigilancia</a></li>
+                        <li><a href="#" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Escoltas VIP</a></li>
+                        <li><a href="#" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Construcción</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 style="margin-bottom: 1.5rem; font-size: 0.8rem;">LEGAL</h4>
+                    <ul style="list-style: none; display: grid; gap: 0.75rem;">
+                        <li><a href="#" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">NIT 901139122-7</a></li>
+                        <li><a href="#" class="text-muted" style="text-decoration: none; font-size: 0.85rem;">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 3rem; border-top: 1px solid var(--glass); flex-wrap: wrap; gap: 2rem;">
+                <p class="text-muted" style="font-size: 0.75rem;">&copy; 2026 JS SEGURIDAD Y ACOMPAÑAMIENTO S.A.S. TODOS LOS DERECHOS RESERVADOS.</p>
+                <div style="display: flex; gap: 2rem;">
+                    <a href="#" class="text-muted"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-muted"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const navOverlay = document.getElementById('mobile-nav-overlay');
+        
+        function toggleMenu() {
+            navOverlay.classList.toggle('active');
+            menuBtn.classList.toggle('open');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        // Premium Reveal System (Intersection Observer)
+        const revealCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        };
+
+        const revealObserver = new IntersectionObserver(revealCallback, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        document.querySelectorAll('[data-reveal]').forEach(el => {
+            revealObserver.observe(el);
+        });
+    </script>
+</body>
+</html>
